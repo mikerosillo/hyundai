@@ -1,0 +1,821 @@
+/* Generales */
+@font-face {
+  font-family:"SansHead-bold";
+  src: url(../fonts/HyundaiSansHead-Bold.otf) format("opentype");
+}
+@font-face {
+  font-family:"SansHead-Light";
+  src: url(../fonts/HyundaiSansHead-Light.otf) format("opentype");
+}
+@font-face {
+  font-family:"SansHead-Medium";
+  src: url(../fonts/HyundaiSansHead-Medium.otf) format("opentype");
+}
+@font-face {
+  font-family:"SansHead-Regular";
+  src: url(../fonts/HyundaiSansHead-Regular.otf);
+}
+@font-face {
+  font-family: avenir;
+  src: url(../fonts/AvenirLTStd-Roman.otf);
+}
+
+html {
+  overflow: hidden;
+}
+body {
+  font-size: 100% !important;
+  font-family:"SansHead-Regular" !important;
+  width: 100%;
+  height: 100vh;
+  background: #003469;
+  position: absolute;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling:touch;
+}
+.txt-primary {
+  color: $color-primary !important;
+}
+
+.txt-secundary {
+  color: $color-secundary !important;
+}
+
+.txt-ligth {
+  color: $color-ligth;
+}
+
+div#nav {
+  color: #FFFF;
+  position: absolute;
+  z-index: 10;
+}
+.home-main {
+    width:100%;
+    height: 100%;
+    background-color: #003469;
+
+}
+.reset-main {
+  width:100%;
+  height: 100%;
+  background-color: #003469;
+
+}
+.game-main {
+    width:100%;
+    height: 100%;
+    background-color: #003469;
+}
+//hamburger menu styles
+.bm-burger-bars {
+    background-color: #FFF !important;
+}
+.agenda {
+  margin-left: -35px;
+}
+.bm-menu {
+  background-color: rgba(255,255,255, 0.8) !important;
+}
+//modals
+a:hover {
+    color: #0056b3 !important;
+    text-decoration: underline;
+}
+// this is fixing the scrolling bug in modals when going to another page and coming back to previus one
+div#agencias {
+  overflow: auto !important;
+}
+div#mreglas {
+  overflow: auto !important;
+}
+div#agenciasHamburger {
+  overflow: auto !important;
+}
+div#registro2 {
+  overflow: auto !important;
+}
+// the above is fixing the scrolling bug in modals when going to another page and coming back to previus one
+
+.termss .a {
+    color: #003469 !important;
+    text-decoration: underline !important;
+    background-color: transparent;
+}
+div#modal-1___BV_modal_content_{
+  background-color:rgba(255,255,255, 0.8);
+}
+div#__BVID__7___BV_modal_content_ {
+   background-color:rgba(255,255,255, 0.8);
+}
+footer#__BVID__7___BV_modal_footer_ {
+  background-color:transparent ;
+  border-color: transparent;
+}
+div#registro___BV_modal_content_ {
+  background-color:rgba(255,255,255, 0.8);
+}
+div#registro2___BV_modal_content_ {
+  background-color:rgba(255,255,255, 0.8);
+}
+//this is fixing the background scrolling bug when modals are open in iphone
+body.modal-open {
+  overflow: hidden !important;
+  // position: fixed;
+  // width: 98.9%;
+  padding-right: 0 !important
+}
+//the above is fixing the background scrolling bug when modals are open in iphone
+div#modal-jugar___BV_modal_content_{
+  background-color:rgba(255,255,255, 0.8);
+}
+h5#modal-1___BV_modal_title_ {
+  color:#003469;
+}
+header#modal-1___BV_modal_header_ {
+  border-bottom-color: transparent;
+}
+input#contraseña-input {
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom-color: #003469
+}
+input#name {
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom-color: #003469;
+  font-style: italic;
+}
+input#email {
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom-color: #003469;
+  font-style: italic;
+}
+input#password {
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom-color: #003469;
+  font-style: italic;
+}
+input#passwordConfirmation {
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom-color: #003469;
+  font-style: italic;
+}
+input#codigo {
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom-color: #003469;
+  font-style: italic;
+}
+input#vehiculo {
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom-color: #003469;
+  font-style: italic;
+}
+input#correo-input {
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom-color: #003469;
+  color:#003469 !important;
+  font-style: italic;
+}
+input#correo {
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom-color: #003469;
+  color:#003469 !important;
+  font-style: italic;
+}
+button.close {
+  color:#003469
+}
+input#nombre-input {
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom-color: #003469;
+  font-style: italic;
+}
+input#edad-input {
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom-color: #003469;
+  font-style: italic;
+}
+
+.margin-auto {
+  margin-left: 40%
+}
+
+
+button.btn.btn-primary {
+  background-color: #003469;
+  color: #FFF;
+}
+
+//second modal
+.form-control.custom-control.custom-radio {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+select#inlineFormCustomSelectState {
+  background-color: #003469;
+  color: #FFF;
+  font-weight: bold;
+  font-style: italic;
+  width:190px;
+  border-color: transparent;
+  background-image: url("../images/icon-flecha-balnca.png");
+  background-size: 25px;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+select#inlineFormCustomSelect {
+  background-color: #003469;
+  color: #FFF;
+  font-weight: bold;
+  font-style: italic;
+  width:80px;
+  border-color: transparent;
+  background-image: url("../images/icon-flecha-balnca.png");
+  background-size: 25px;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+select.inline-form-state-select {
+  background-color: #003469;
+  color: #FFF;
+  font-weight: bold;
+  font-style: italic;
+  width:160px;
+  border-color: transparent;
+  background-image: url("../images/icon-flecha-balnca.png");
+  background-size: 25px;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.not-found {
+  background-color: #003469;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // background-image: url("../images/sitio-hyundai-time_error-2.png");
+  width:'100%';
+  height: 100vh;
+}
+.promo {
+  font-size:30px;
+}
+.check-terms.custom-control-input{
+  position: unset !important;
+  margin-left: 8px;
+  opacity: unset !important;
+  background-color: #FFF !important;
+}
+.check-terms-IE.custom-control-input{
+  position: static !important;
+ 
+  
+  opacity: 1 !important;
+  background-color: #FFF !important;
+}
+hr.line {
+  background-color:#003469;
+  margin-top: 0;
+  width:100%;
+  margin-left: 0px;
+}
+.button {
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.button-header {
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-index {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 100%;
+  width: 100%;
+
+}
+
+@media only screen and(max-width:1312px) and (min-width:1255px){
+  .boton-jugar{
+    margin-right: 6px !important;
+  }
+}
+.avobe-footer {
+  background-color: #003469;
+  height: 3rem;
+}
+.container-pad {
+    margin-left: 35px;
+}
+.title-home {
+    color:#FFF;
+    letter-spacing: 3px;
+    font-size: 50px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-weight: bolder;
+}
+.sub-title-home {
+    color:#FFF;
+    font-size: 40px;
+    font-weight: 100;
+    padding-bottom: 15px;
+    padding-top: 0px;
+}
+
+.sub-sub-title-home {
+    color:#FFF;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: justify;
+}
+
+.des-home {
+  color:$color-ligth;
+  font-size: 22px;
+  font-weight: 100;
+  text-align: justify;
+}
+
+@media only screen and(max-width:480px){
+  .title-home{
+    font-size: 34px;
+    margin-bottom: 0;
+    padding-top: 20px !important;
+    margin-top: 0px;
+    justify-content: center;
+  }
+
+  .sub-title-home{
+    font-size: 30px;
+    padding-bottom: 0 !important;
+  }
+
+  .sub-sub-title-home{
+    font-size: 19px;
+    margin-bottom: 0px;
+  }
+
+  .des-home{
+    font-size: 16px;
+  }
+
+  .logo-header-top > img{
+    max-width: 70% !important;
+  }
+
+  .logo-header-top {
+    padding-top: 10px !important;
+  }
+
+  .botones-home {
+    margin-top: 2rem !important;
+  }
+
+  .button-mobile {
+    padding-left: 15px;
+    padding-right: 18px;
+  }
+
+  .jumbotron {
+    margin-top: 20px;
+  }
+
+  .social {
+    width: 45px;
+  }
+}
+
+@media only screen and(min-width:768px) and (max-width:992px){
+  .title-home{
+    margin-top: 107px !important;
+  }
+}
+
+@media only screen and(min-width:1078px){
+  .logo-header-top > img{
+    padding-top: 40px !important;
+  }
+  .title-home{
+    padding-top: 130px; 
+    padding-bottom: -.75rem !important;
+    line-height: .8;
+    justify-content: left;
+  }
+  .sub-title-home{
+    line-height: 1.1;
+    margin-bottom: 2rem !important;
+    justify-content: left;
+  }
+  .sub-sub-title-home{
+    padding-top: 2rem;
+    margin-bottom: 0rem !important;
+  }
+}
+
+.iconos > img{
+  max-width: 130px;
+}
+
+.title-modal{
+  color: #003469;
+
+}
+
+.head-t{
+  text-align: center;
+}
+.rules {
+  border-color: transparent;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+// modal cual es tu estado
+button.btn.col-12.estado.btn-primary.collapsed {
+  border-color:grey;
+  margin-bottom:10px;
+}
+button.btn.col-12.localidad.btn-secondary.btn-sm.collapsed {
+  margin-bottom:10px;
+}
+
+// place holders
+::placeholder {
+  color: #003469 !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #003469 !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #003469 !important;
+}
+// place holders end
+
+/////////// buttons
+button.btn.col-12.estado.btn-primary {
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  font-weight: bolder;
+  border-color: transparent;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.0);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+button.btn.float-right.button.btn-primary.btn-sm {
+  background-color: #003469;
+}
+button.btn.btn-primary {
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  font-weight: bolder;
+  border-color: transparent;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+
+}
+button.btn.button.btn-secondary {
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  font-weight: bolder;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+button.btn.mt-3.btn-secondary {
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  font-weight: bolder;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+button.btn.btn-primary {
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  font-weight: bolder;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  background-color:#003469;
+}
+button.btn.btn-secondary {
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  font-weight: bolder;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+
+}
+button.btn.btn-primary.collapsed {
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  font-weight: bolder;
+  background-color:#003469;
+  color:#FFF;
+}
+.button-mobile {
+  min-width:240px !important;
+}
+////////buttons end
+
+
+//footer
+.footer-text {
+  text-align: justify;
+}
+.footer-text-IE {
+  text-align: justify;
+  display: contents !important;
+}
+.logo-footer {
+  max-width: 75% !important;
+}
+.contenedor-dinamica {
+  background-color: #FFF;
+  margin-bottom: 3rem;
+}
+
+.contenedor-faqs {
+  background-color: #ffffff;
+  padding-bottom: 25px;
+}
+.faqs-title {
+  background-color: #FFF;
+}
+
+.tablero-list {
+  padding: 0;
+  margin: 0;
+}
+
+.tyc {
+  text-align: center;
+}
+
+.terminos:hover {
+  color: #0056b3;
+}
+
+.tablero {
+  display: none;
+}
+
+.url-site-footer{
+  margin-top: 0px;
+}
+
+@media only screen and(min-width: 581px) {
+  .terminos {
+    margin-right: 20px;
+  }
+}
+
+.space {
+  padding: 0;
+  margin: 0;
+}
+.pregunta > b-button{
+  background-color: #ffffff;
+  font-family: "SansHead-Regular";
+}
+
+.btn-info:not(:disabled):not(.disabled):active,
+.btn-info:not(:disabled):not(.disabled).active,
+.show > .btn-info.dropdown-toggle {
+  color: #000;
+  background-color: #ffffff;
+  border-color: #FFFF;
+  border: 0px;
+}
+
+.card {
+  border-bottom: none;
+}
+
+a.btn.btn-info.btn-block {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.btn-info:hover {
+  border-color: #ffffff;
+}
+
+.btn-info:not(:disabled):not(.disabled):active:focus {
+  -webkit-box-shadow: none !important;
+  box-shadow: none;
+}
+/***Rules*****/
+
+.rules p, h1 {
+  text-align: justify;
+}
+
+.rules h1 {
+  text-align: center;
+  margin: 35px 0;
+}
+
+.rules h3 {
+  color: #003469;
+  text-align: center;
+  margin: 18px;
+
+}
+
+.rules h2 {
+  color: #003469;
+  text-align: center;
+  margin: 25px 0;
+  font-size: 2.2rem;
+}
+
+.rules h4 {
+  color: #003469;
+  text-align: center;
+}
+.rules table {
+  margin-bottom: 2.5rem;
+  border: .2rem solid #003469;
+}
+
+
+.list-rules li{
+  text-align: left;
+}
+
+.list-rules{
+  list-style-type: circle;
+}
+
+.puntos li{
+  padding-left: 15px !important;
+  color: #000000;
+}
+ul {
+  list-style-type: none;
+  text-align: left;
+  margin: 10px 0;
+}
+
+li {
+  text-align: left;
+  margin: 10px 0;
+}
+/***Rules End******/
+
+/*******Marcador  */
+
+.player {
+  background-image: url("../images/HW-DASH-2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+  color: #FFF;
+  border: 3px solid #d7d7d7;
+
+}
+
+.players-title {
+  color: #000000;
+  background-color: #FFF;
+  padding: 20px 0;
+
+}
+.image-nav {
+  width: 75%;
+  height: auto;
+  max-height: 18vh !important;
+  padding-left: 2rem;
+}
+.img-header-p {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+img.ball {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 15px;
+}
+
+.img-players{
+  width:100%;
+  margin-top: 3rem;
+}
+
+div.player > h2 {
+  align-items: center;
+}
+
+div.player .col-1 > h2{
+  margin-bottom: 0;
+  margin: 5px 0;
+}
+
+div.player .col-4 > p {
+  margin-bottom: 0;
+  margin: 5px 0;
+}
+
+div.player .col-3 > p {
+  margin-bottom: 0;
+  margin: 5px 0;
+}
+
+.id {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.name {
+  font-size: 1.5rem;
+}
+
+.puntaje {
+  font-size: 1.5rem;
+}
+
+.time {
+  font-size: 1.5rem;
+}
+
+.id {
+  text-align: center;
+}
+.list-group-item {
+  border: none !important;
+}
+.list-score{
+  margin-bottom: 3rem;
+}
+/*******Marcador End*/
+
+/**FAQs****/
+
+.pregunta > a {
+  color: #000000 !important;
+  text-decoration: none !important;
+}
+
+.respuesta {
+  font-size: 15px !important;
+}
+
+//**End FAQs****/

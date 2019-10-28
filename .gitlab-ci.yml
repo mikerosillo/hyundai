@@ -1,0 +1,48 @@
+image: node:8.9.4
+
+before_script:
+  - apt-get update >/dev/null
+  - apt-get install -y locales >/dev/null
+  - echo "en_US UTF-8" > /etc/locale.gen
+  - locale-gen en_US.UTF-8
+  - export LANG=en_US.UTF-8
+  - export LANGUAGE=en_US:en
+  - export LC_ALL=en_US.UTF-8
+
+cache:
+  paths:
+    - vendor/ruby
+    - node_modules
+
+build:
+  image: node:8.9.4
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1h
+  stage: build
+  script:
+    - npm install -g @vue/cli
+    - npm install
+    - CI=false npm run build
+
+deploy:
+  image: ruby:2.4
+  dependencies:
+    - build
+  stage: deploy
+  script:
+    - gem install dpl
+    - dpl --provider=s3
+      --skip_cleanup
+      --local-dir=dist
+      --access-key-id=$AWS_ACCESS_KEY_ID
+      --secret-acces-key=$AWS_SECRET_ACCESS_KEY
+      --bucket=$AWS_BUCKET
+      --region=$AWS_ACCESS_REGION
+  only:
+    - master
+
+stages:
+  - build
+  - deploy
